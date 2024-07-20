@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: radial-gradient(circle, #3e2e74 2%, #b5cad4 100%);
+  background-size: 4px 2px;
+}
+
+.container {
+  font-size: 16px;
+  background-color: #b5cad4;
+  width: 90vw;
+  max-width: 34em;
+  padding: 3em;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#options-container {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+#options-container div {
+  width: 100%;
+  float: flex;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em 0;
+}
+
+#options-container button {
+  padding: 0.6em 1.2em;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  border-radius: 0.3em;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+#options-container button:disabled {
+  border-color: #6c2929;
+  color: #808080;
+  background-color: #efefef;
+  cursor: not-allowed;
+}
+
+#options-container button.active,
+#options-container button.active:hover {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #333; /* Borde destacado */
+}
+
+#options-container button:hover {
+  background-color: #f0f0f0;
+  color: #8c52ff;
+  border: 3px solid #8c52ff;
+}
+
+.letter-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+#letter-container button {
+  height: 2.4em;
+  width: 2.4em;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#letter-container button:hover {
+  background-color: #f0f0f0;
+}
+
+.new-game-popup {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.6em;
+}
+
+#user-input-section {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  margin: 0.6em 0 1.2em 0;
+}
+
+canvas {
+  margin: auto;
+}
+
+.hide {
+  display: none;
+}
+
+#result-text h2 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+#result-text p {
+  font-size: 1.25em;
+  margin: 1em 0 2em 0;
+  color: #555;
+}
+
+#result-text span {
+  font-weight: 600;
+  color: #000;
+}
+
+#new-game-button {
+  font-size: 1.25em;
+  padding: 0.5em 1em;
+  background-color: #8c52ff;
+  border: none;
+  color: #fff;
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#new-game-button:hover {
+  background-color: #3fcc91;
+}
+
+.win-msg {
+  color: #39d78d;
+  font-weight: bold;
+}
+
+.lose-msg {
+  color: #fe5152;
+  color: #fe5152;
+  font-weight: bold;
+}
+
+.options.active {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.horcado {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
